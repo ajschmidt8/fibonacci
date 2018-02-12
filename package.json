@@ -4,14 +4,16 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "node-sass": "^4.7.2",
     "parcel-bundler": "^1.5.1",
     "parcel-plugin-vue": "^1.5.0",
+    "uuid": "^3.2.1",
     "vue": "^2.5.13"
   },
   "scripts": {
-	  "build": "parcel build ./src/index.html --public-url ./",
-	  "watch": "parcel ./src/index.html"
+    "build": "parcel build ./src/index.html --public-url ./",
+    "watch": "parcel ./src/index.html"
   }
 }
