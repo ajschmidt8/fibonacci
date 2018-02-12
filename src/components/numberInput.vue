@@ -56,20 +56,17 @@ function getFibonacciIndex(num){
 
 // wrapper function
 function getFiobacciSequence(fibonacciLimit) {
-	let ind = 1;
-	let lastValue = 1;
-	let seq = [{
-		val: 1,
-		even: false,
-	}];
+	let ind = 0;
+	let lastValue = 0;
+	let seq = [];
 
 	while (lastValue < fibonacciLimit) {
 		seq.push({
 			val: lastValue,
-			even: lastValue % 2 === 0,
+			even: lastValue % 2 === 0 && lastValue !== 0,
 		});
-		ind++;
 		lastValue = getFibonacciIndex(ind)
+		ind++;
 		}
 	return seq
 }
