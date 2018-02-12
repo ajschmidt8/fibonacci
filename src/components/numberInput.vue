@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div class="ui action input">
-			<input @keyup.enter="handleClick" v-model="fibonacciLimitInput" type="text" placeholder="Enter a number">
+			<input @keyup.enter="handleClick" v-model="fibonacciLimitInput" type="tel" placeholder="Enter a number" id="fibInput">
 			<button @click="handleClick" class="ui button">Submit</button>
 		</div>
 
@@ -26,7 +26,8 @@ export default {
 	methods: {
 		handleClick: function(e) {
 			if (this.fibonacciLimitInput === "" ||
-			this.fibonacciLimitInput < 2) {
+			this.fibonacciLimitInput < 2 ||
+			!parseInt(this.fibonacciLimitInput)) {
 				this.invalidInput = true;
 				return;
 			}
@@ -36,7 +37,7 @@ export default {
 			this.fibonacciLimitInput= "";
 			return;
 		}
-	}
+	},
 }
 
 // https://medium.com/developers-writing/fibonacci-sequence-algorithm-in-javascript-b253dc7e320e
