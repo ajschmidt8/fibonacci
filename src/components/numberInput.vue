@@ -31,6 +31,7 @@ export default {
 				this.invalidInput = true;
 				return;
 			}
+
 			this.invalidInput = false;
 			const seq = getFiobacciSequence(this.fibonacciLimitInput);
 			this.$emit('newSequence', {numberEntered: this.fibonacciLimitInput, seq})
@@ -67,7 +68,8 @@ function getFiobacciSequence(fibonacciLimit) {
 		});
 		lastValue = getFibonacciIndex(ind)
 		ind++;
-		}
+	}
+
 	return seq
 }
 </script>

@@ -3,9 +3,11 @@
 		<h1>
 			Fibonacci App <i class="calculator icon"></i>
 		</h1>
+
 		<h2>
 			About
 		</h2>
+
 		<div class="content">
 			<p>
 				This app will summate the even numbers of the <a href="https://www.mathsisfun.com/numbers/fibonacci-sequence.html">fibonacci sequence</a> that are less than the provided value.
@@ -14,9 +16,13 @@
 				Type in a value and <strong>press enter</strong> or <strong>click submit</strong> to see the sequence and its sum.
 			</p>
 		</div>
+
 		<NumberInput v-on:newSequence="addSequence" />
+
 		<SequenceResults v-if="fibonacciSequences.length" :sequences="fibonacciSequences" />
+
 		<div class="ui hidden divider"></div>
+
 		<div class="source">
 			<a class="ui right labeled icon black button" href="https://github.com/ajschmidt8/fibonacci" target="_blank">
 				<i class="right github icon"></i>

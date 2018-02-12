@@ -9,6 +9,7 @@
 					<th class="center aligned">Sum</th>
 				</tr>
 			</thead>
+
 			<tbody>
 				<tr v-for="sequence in sequences" :key="sequence.id">
 					<td class="center aligned numberEntered">
