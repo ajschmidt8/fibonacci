@@ -6,7 +6,16 @@ Type in a value and press enter or click submit to see the sequence and its sum.
 
 View the app [here](http://elated-yalow-49e04a.netlify.com/).
 
-## Resources
+## Resources & Acknowledgements
 
-https://www.mathsisfun.com/numbers/fibonacci-sequence.html
-https://semantic-ui.com/
+- Fibonacci Sequence - https://www.mathsisfun.com/numbers/fibonacci-sequence.html
+
+- Algorithm - https://medium.com/developers-writing/fibonacci-sequence-algorithm-in-javascript-b253dc7e320e
+
+- UI Elements - https://semantic-ui.com/
+
+- Asset Bundler - https://parceljs.org/
+
+- JS Framework - https://vuejs.org/
+
+- Static Site Host - https://www.netlify.com/
