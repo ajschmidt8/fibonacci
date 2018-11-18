@@ -4,7 +4,7 @@ This is a Vue app that will summate the even numbers of the [fibonacci sequence]
 
 Type in a value and press enter or click submit to see the sequence and its sum.
 
-View the app [here](http://elated-yalow-49e04a.netlify.com/).
+View the app [here](https://fibonacciapp.netlify.com/).
 
 ## Resources & Acknowledgements
 
